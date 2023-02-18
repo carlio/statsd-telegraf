@@ -1,9 +1,10 @@
 from __future__ import absolute_import
 
-from .client import StatsClient
-from .client import TCPStatsClient
+from .client import StatsClient, TCPStatsClient
 
 
-VERSION = (3, 2, 1)
+Client = StatsClient
+
+VERSION = (4, 0, 0)
 __version__ = '.'.join(map(str, VERSION))
-__all__ = ['StatsClient', 'TCPStatsClient']
+__all__ = ['StatsClient', 'TCPStatsClient', 'Client']
