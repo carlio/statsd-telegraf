@@ -67,6 +67,3 @@ env.txt
 pip-wheel-metadata
 dist
 
-# other
-my-notes.txt
-dev.conf

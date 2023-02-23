@@ -79,8 +79,8 @@ class StatsClientBase(object):
     def pipeline(self):
         pass
 
-    def timer(self, stat, rate=1):
-        return Timer(self, stat, rate)
+    def timer(self, stat, rate=1, tags=None):
+        return Timer(self, stat, rate, tags=tags)
 
     def timing(self, stat, delta, rate=1, tags=None):
         """Send new timing information. `delta` is in milliseconds."""
